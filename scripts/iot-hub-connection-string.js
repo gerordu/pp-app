@@ -33,7 +33,7 @@ function generateSasToken(resourceUri, signingKey, policyName, expiresInMins) {
  * `"Endpoint=sb://<hostname>;EntityPath=<your-iot-hub>;SharedAccessKeyName=<KeyName>;SharedAccessKey=<Key>"`
  */
 async function convertIotHubToEventHubsConnectionString(connectionString) {
-    const { HostName, SharedAccessKeyName='ejemplo', SharedAccessKey } = parseConnectionString(
+    const { HostName, SharedAccessKeyName, SharedAccessKey } = parseConnectionString(
         connectionString
     );
 
