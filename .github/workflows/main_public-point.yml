@@ -34,6 +34,6 @@ jobs:
       with:
         app-name: public-point
         slot-name: Production
-        publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_00D793C217424D57A800406559743962 }}
+        publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_4DFCB5A2FCD44D0C830B37E428D7C62D }}
         package: .
 
