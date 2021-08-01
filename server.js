@@ -3,9 +3,12 @@ const http = require('http');
 const WebSocket = require('ws');
 const path = require('path');
 const EventHubReader = require('./scripts/event-hub-reader.js');
+require('dotenv').config();
 
-const iotHubConnectionString = process.env.IotHubConnectionString;
+const iotHubConnectionString = process.env['IotHubConnectionString'];
+// console.log(process.env);
 if (!iotHubConnectionString) {
+  console.log(iotHubConnectionString);
   console.error(`Environment variable IotHubConnectionString must be specified.`);
   return;
 }
